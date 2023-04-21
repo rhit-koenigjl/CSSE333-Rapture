@@ -3,26 +3,29 @@ GO
 
 CREATE TABLE Location (
 	ID int PRIMARY KEY IDENTITY(1, 1),
-	Name varchar(20)
+	Name varchar(20) NOT NULL
 );
 
 CREATE TABLE Person (
 	ID int PRIMARY KEY IDENTITY(1, 1),
-	Name varchar(20),
+	UserName varchar(50) UNIQUE NOT NULL,
+	Password varchar(50) NOT NULL,
+	Salt varbinary(1024),
+	Name varchar(20) NOT NULL,
 	LivesAtID int,
 	FOREIGN KEY (LivesAtID) REFERENCES Location(ID)
 );
 
 CREATE TABLE Disaster (
 	ID int PRIMARY KEY IDENTITY(1, 1),
-	Name varchar(20),
+	Name varchar(20) NOT NULL,
 	Description varchar(280),
 	Range int
 );
 
 CREATE TABLE Asset (
 	ID int PRIMARY KEY IDENTITY(1, 1),
-	Name varchar(20),
+	Name varchar(20) NOT NULL,
 	Description varchar(280)
 );
 
