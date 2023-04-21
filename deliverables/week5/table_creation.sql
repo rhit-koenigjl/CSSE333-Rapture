@@ -2,26 +2,26 @@ USE Rapture
 GO
 
 CREATE TABLE Location (
-	ID int PRIMARY KEY,
+	ID int PRIMARY KEY IDENTITY(1, 1),
 	Name varchar(20)
 );
 
 CREATE TABLE Person (
-	ID int PRIMARY KEY,
+	ID int PRIMARY KEY IDENTITY(1, 1),
 	Name varchar(20),
 	LivesAtID int,
 	FOREIGN KEY (LivesAtID) REFERENCES Location(ID)
 );
 
 CREATE TABLE Disaster (
-	ID int PRIMARY KEY,
+	ID int PRIMARY KEY IDENTITY(1, 1),
 	Name varchar(20),
 	Description varchar(280),
 	Range int
 );
 
 CREATE TABLE Asset (
-	ID int PRIMARY KEY,
+	ID int PRIMARY KEY IDENTITY(1, 1),
 	Name varchar(20),
 	Description varchar(280)
 );
