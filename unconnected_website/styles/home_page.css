@@ -1,0 +1,58 @@
+#title {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: auto;
+}
+
+#subtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    text-align: right;
+    width: 100%;
+}
+
+#subtitle h5 {
+    margin-right: 3em;
+    color: white;
+    font-size: 16px;
+}
+
+#mainContent {
+    width: 100%;
+}
+
+#mainContent h3 {
+    margin-left: 2em;
+}
+
+#disastersList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.disaster-bubble {
+    margin: 5px 1em;
+    height: auto;
+    vertical-align: middle;
+    background-color: #26394395;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+
+.disaster-bubble:hover {
+    background-color: #263943;
+}
