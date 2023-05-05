@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>My Webpage</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles/home_page.css">
+    <link rel="stylesheet" type="text/css" href="/static/styles/rapture.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="title">
+        <img src="/static/images/logo_blank.png" id="titleImage">
+        <div id="subtitle">        
+          <h5>...kinda          </h5>
+        </div>
+    </div>
+    <div id="loginMainContent">
+        <form action="/login" method="post"></form>
+
+        <label for="loginUser">Username:</label>
+        <input type="text" id="loginUser" name="loginUser">
+
+        <label for="loginPass">Password:</label>
+        <input type="text" id="loginPass" name="loginPass">
+
+        <button id="loginBtn">login</button>
+
+        <br>
+        <br>
+
+        <label for="registerUser">Username:</label>
+        <input type="text" id="registerUser" name="registerUser">
+
+        <label for="registerPass">Password:</label>
+        <input type="text" id="registerPass" name="registerPass">
+
+        <label for="registerName">Full Name:</label>
+        <input type="text" id="registerName" name="registerName">
+
+        <label for="registerLocation">Location:</label>
+        <input type="text" id="registerLocation" name="registerLocation">
+
+        <button id="registerBtn">Register</button>
+    </div>
+    <script src="/static/scripts/main.js"></script>
+  </body>
+</html>

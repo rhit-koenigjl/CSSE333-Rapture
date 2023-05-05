@@ -1,0 +1,17 @@
+body {
+    background-image: url("../images/background_spikes.png");
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: 200px;
+    background-color: #1c2a32;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Prompt', sans-serif;
+    color: #d0d0d0;
+
+    height: 100%;
+}

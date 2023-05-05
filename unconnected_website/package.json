@@ -1,0 +1,15 @@
+{
+  "name": "unconnected_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Frontend/public/scripts/main.js",
+  "scripts": {
+    "start": "nodemon Frontend.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0"
+  }
+}
