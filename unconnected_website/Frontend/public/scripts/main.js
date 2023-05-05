@@ -192,12 +192,12 @@ function homePage(){
 
 function main() {
     console.log("in main");
-    if(!isLoggedIn && window.location.href != loginURL){
-        window.location.href = loginURL;
-        //login();
-    }else if(isLoggedIn && window.location.href != homeURL){
-        window.location.href = homeURL;
-    }
+    // if(!isLoggedIn && window.location.href != loginURL){
+    //     window.location.href = loginURL;
+    //     //login();
+    // }else if(isLoggedIn && window.location.href != homeURL){
+    //    window.location.href = homeURL;
+    //
 
     if(isLoggedIn){
         homePage();
