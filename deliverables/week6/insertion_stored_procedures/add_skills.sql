@@ -10,7 +10,7 @@ BEGIN
 		return 1
 	END
 
-	IF(COUNT((SELECT a.ID FROM Asset a JOIN Skill s on s.ID = a.ID where a.name = @Name)) <> 0)
+	IF((SELECT COUNT(a.ID) FROM Asset a JOIN Skill s on s.ID = a.ID where a.name = @Name) <> 0)
 	BEGIN
 		RAISERROR('Skill already exists', 1, 14)
 		return 2
@@ -18,7 +18,7 @@ BEGIN
 
 	DECLARE @id int
 
-	IF(COUNT((SELECT a.ID FROM Asset a where a.Name = @Name)) = 0)
+	IF((SELECT COUNT(a.ID) FROM Asset a where a.Name = @Name) = 0)
 	BEGIN
 		INSERT INTO Asset
 			Values(@name, @description)
